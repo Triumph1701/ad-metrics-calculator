@@ -266,7 +266,21 @@ export function CalculatorPageClient({ slug }: CalculatorPageClientProps) {
           </div>
         </section>
 
-        <GiscusComments />
+        <section className="mt-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/60 sm:p-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-black">
+              Feedback & Suggestions
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-black sm:text-3xl">
+              Share Your Thoughts
+            </h2>
+            <p className="mt-3 text-lg leading-8 text-black">
+              Questions, ideas, or improvements? Drop them below and we&apos;ll keep refining the calculator suite.
+            </p>
+          </div>
+
+          <GiscusComments />
+        </section>
       </div>
     </main>
   );
