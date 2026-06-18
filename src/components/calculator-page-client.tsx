@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import GiscusComments from "@/components/GiscusComments";
 import { SiteHeader } from "@/components/site-header";
 import { calculators, getCalculatorBySlug } from "@/lib/calculators";
 import { getCalculatorDecoration } from "@/lib/calculator-decorations";
@@ -264,6 +265,8 @@ export function CalculatorPageClient({ slug }: CalculatorPageClientProps) {
             ))}
           </div>
         </section>
+
+        <GiscusComments />
       </div>
     </main>
   );
